@@ -1,0 +1,10 @@
+[book]
+authors = ["Will Crichton"]
+language = "en"
+multilingual = false
+src = "src"
+
+[output.html]
+additional-css = ["vars.css"]
+
+[preprocessor.argus]

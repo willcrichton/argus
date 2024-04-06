@@ -3,5 +3,5 @@ members = [ "crates/*" ]
 exclude = [ "crates/argus_cli/tests/workspaces", "examples" ]
 resolver = "2"
 
-[profile.dev.package.similar]
-opt-level = 3
+[patch.crates-io]
+mdbook-preprocessor-utils = { path = "../mdbook-preprocessor-utils" }

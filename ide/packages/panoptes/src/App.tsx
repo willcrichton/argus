@@ -53,8 +53,10 @@ const App = observer(({ config }: { config: PanoptesConfig }) => {
     const {
       payload,
     }: {
-      payload: SystemToPanoptesMsg<SystemToPanoptesCmds>;
+      payload: SystemToPanoptesMsg<SystemToPanoptesCmds> | undefined;
     } = e.data;
+
+    if (!payload) return;
 
     console.debug("Received message from system", payload);
 
